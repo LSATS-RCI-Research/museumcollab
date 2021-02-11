@@ -7,19 +7,20 @@ $susy: (
 );
 
 // Colors
+$accent1:                               #5E7F5C; // light green
+$accent2:                               #65211D; // red
+$accent3:                               #C2B280; // tan
+$accent4:                               #0C2210; // dark green
 
 $gray:                                  #ababab;
 $bold:                                  darken($gray, 20%);
 $light:                                 lighten($gray, 20%);
-$bg:                                    lighten($gray, 30%);
-$link:                                  #920b0b;
+$bg:                                    #FFFFFF;
 
-$accent1:                               #5E7F5C; // green
-$accent2:                               #C2B280; // tan
-
-$header1:                               #65211D;
-$header26:                              $accent2;
-$text:                                  #0C2210;
+$link:                                  $accent2;
+$heading1:                              $accent2;
+$heading2-6:                            $accent3;
+$text:                                  $accent4;
 
 
 // Typography
