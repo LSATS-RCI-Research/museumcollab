@@ -41,11 +41,11 @@ $userBar = $this->userBar();
             </div>
 
             <nav>
-            <?php
-            echo $site->publicNav()->menu()->renderMenu(null, [
-                'maxDepth' => $this->themeSetting('nav_depth') - 1
-            ]);
-            ?>
+                <?php
+                echo $site->publicNav()->menu()->renderMenu(null, [
+                    'maxDepth' => $this->themeSetting('nav_depth') - 1
+                ]);
+                ?>
             </nav>
         </header>
         <div id="content" role="main">

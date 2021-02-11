@@ -443,8 +443,6 @@ button.o-icon-search {
     left: 0;
     right: 0;
     background-color: #fff;
-    border-bottom: 1px solid $light;
-    border-top: 1px solid $light;
     padding: $spacing-s gutter();
 }
 
@@ -455,6 +453,7 @@ button.o-icon-search {
 
 #search form input[type="text"] {
     width: 100%;
+    border-width: 0px;
 }
 
 #search form button[type="submit"] {
@@ -462,7 +461,7 @@ button.o-icon-search {
     width: 1.5 * $base-line-height;
     text-indent: -9999px;
     position: relative;
-    border-radius: 0 3px 3px 0;
+    background-color: #fff;
 
     &:before {
         content: "\f002";
