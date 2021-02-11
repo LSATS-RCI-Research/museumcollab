@@ -415,15 +415,14 @@ nav.pagination {
 
 /* @group ----- Header ----- */
 
-.site-title h1 {
-    font-size: 1.25 * $base-font-size;
-    line-height: $base-line-height;
-    padding-right: $base-line-height;
+.site-logo img {
+    width: auto;
+    height: 100px;
 }
 
 header {
     margin: 0 0 (2.5 * $spacing-l);
-    background-color: #fff;
+    background-color: $accent1;
     border-bottom: 1px solid $light;
     position: relative;
 
@@ -432,15 +431,6 @@ header {
         padding: 0 gutter();
         display: block;
     }
-}
-
-.site-title:hover,
-.site-title:active {
-    border-bottom: 0;
-}
-
-.site-title h1 {
-    margin: 0;
 }
 
 button.o-icon-search {
