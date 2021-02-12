@@ -523,6 +523,24 @@ footer {
 
 /* @end */
 
+/* @group ----- Resource ----- */
+
+// border and shadow
+.item.resource:not(.item.resource.browse) {
+    border: 2px solid $light;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px $light;
+    padding: 10px;
+    margin: 20px;
+}
+
+// gives space for shadow
+.attachments, .item-showcase, .resource-list {
+    padding: 10px;
+}
+
+/* @end */
+
 /* @group ----- Resource List ----- */
 
 ul.resource-list {
