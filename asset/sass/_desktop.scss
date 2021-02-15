@@ -236,11 +236,31 @@ header .parent .parent .parent ul a {
 
 /* @group ----- Resource List ----- */
 
+.item.resource {
+    overflow: auto;
+}
+
+.item.resource > h3,
+.item.resource > h4 {
+    margin: 0;
+    line-height: normal;
+}
+
+.item.resource > .media-render,
+.item.resource > a {
+    float: left;
+    margin-right: 10px;
+}
+
+.file .attachments .item.resource {
+    width: 450px;
+}
+
 ul.resource-list .resource img {
     width: 4 * $spacing-l;
     height: auto;
     float: right;
-    margin-left: $spacing-m;
+    /*margin-left: $spacing-m;*/
 }
 
 ul.resource-list .resource img ~ * {
@@ -311,9 +331,9 @@ body.item-set .metadata ~ nav.pagination:first-of-type {
     clear: both;
 }
 
-ul.preview.resource-list li:first-of-type {
+/*ul.preview.resource-list li:first-of-type {
     border-top: 1px solid $light;
     padding-top: ($spacing-l - 1px);
-}
+}*/
 
 /* @end */

@@ -526,15 +526,24 @@ footer {
 /* @group ----- Resource ----- */
 
 // border and shadow
-.item.resource:not(.item.resource.browse) {
+.item.resource:not(.browse):not(.show) {
     border: 2px solid $light;
     border-radius: 20px;
     box-shadow: 2px 2px 4px $light;
     padding: 10px;
+}
+
+// space between cards
+.attachments .item.resource,
+.resource-list .item.resource {
+    margin: 20px 0px;
+}
+
+.item-showcase .item.resource {
     margin: 20px;
 }
 
-// gives space for shadow
+// space for box shadow
 .attachments, .item-showcase, .resource-list {
     padding: 10px;
 }
@@ -549,27 +558,27 @@ ul.resource-list {
 }
 
 ul.resource-list .resource {
-    border-bottom: 1px solid $light;
+    /*border-bottom: 1px solid $light;
     padding-bottom: ($spacing-l - 1px);
-    margin: $spacing-l 0;
+    margin: $spacing-l 0;*/
     overflow: hidden;
     position: relative;
 
-    & > *:last-child {
+    /*& > *:last-child {
         margin-bottom: 0;
-    }
+    }*/
 
-    &:first-child {
+    /*&:first-child {
         border-top: 1px solid $light;
         padding-top: ($spacing-l - 1px);
-    }
+    }*/
 }
 
 ul.resource-list .resource img {
     height: auto;
     width: 2 * $spacing-l;
     float: right;
-    margin-left: $spacing-m;
+    /*margin-left: $spacing-m;*/
 }
 
 ul.resource-list .resource h4 {

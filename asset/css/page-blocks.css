@@ -4,7 +4,7 @@
     border-bottom: 1px solid #dfdfdf;*/
     padding: calc(1rem - 1px) 0 0;
     overflow: hidden;
-    text-align: center;
+    /*text-align: center;*/
     clear: both;
     display: flex;
     flex-wrap: wrap;
@@ -22,7 +22,7 @@
 }
 .item-showcase .resource.item {
     vertical-align: top;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem
 }
 .item-showcase .resource.item img {
     margin-right: 0.5rem;
@@ -34,10 +34,10 @@
 .item-showcase .resource.item:not(:only-child) {
     width: 25%;
     clear: none;
-    padding: 0 0.5rem;
+    /*padding: 0 0.5rem;*/
 }
 .item-showcase .resource.item:not(:only-child) h3 {
-    clear: left;
+    /*clear: left;*/
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 0.5rem 0 0;
@@ -67,6 +67,11 @@
 .right .item.resource:last-of-type {
     padding-bottom: -1px;
 }*/
+
+
+
+
+/*  -------------------preserve block
 .left .item.resource .media-render a,
 .right .item.resource .media-render a {
     display: block;
@@ -83,14 +88,31 @@
 .right .item.resource img {
     max-width: 100%;
     vertical-align: bottom;
-    margin-bottom: 0.5rem;
+    /*margin-bottom: 0.5rem;\*\/
+} ----------------------*/
+
+
+
+
+.file .item.resource .media-render a {
+    display: block;
 }
-.file {
-    /*border-top: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;*/
+.file .item.resource audio,
+.file .item.resource canvas,
+.file .item.resource video,
+.file .item.resource progress,
+.file .item.resource img {
+    max-width: 100%;
+    vertical-align: bottom;
+    /*margin-bottom: 0.5rem;*/
+}
+
+/*.file {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
     margin-top: 1rem;
     margin-bottom: 1rem;
-}
+}*/
 .left.file {
     float: left;
     clear: left;
@@ -105,7 +127,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    text-align: center;
+    /*text-align: center;*/
 }
 .center.file .item {
     width: 100%;
