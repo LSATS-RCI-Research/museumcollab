@@ -686,10 +686,15 @@ body.resource #content > h2:first-of-type + h3 {
     font-size: .75 * $base-font-size;
 }
 
+#content .media-list {
+    float: left;
+    margin-right: 30px;
+}
+
 #content .media.resource {
-    display: inline-block;
-    text-align: center;
-    vertical-align: bottom;
+    display: block;
+    /*text-align: center;
+    vertical-align: bottom;*/
     margin-right: $spacing-s;
 
     &:hover {
