@@ -52,7 +52,7 @@
 .right,
 .left {
     overflow: hidden;
-    max-width: 33.33%;
+    /*max-width: 33.33%;*/
 }
 /*.left .item.resource,
 .right .item.resource {

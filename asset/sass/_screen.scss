@@ -522,10 +522,15 @@ footer {
 /* @group ----- Resource ----- */
 
 // border and shadow
-.item.resource:not(.browse):not(.show) {
-    border: 2px solid $light;
+div.item.resource,
+li.item.resource {
+    box-shadow: 
+        0px 0px 0px 2px $light, // outer border
+        2px 2px 4px $light; // card shadow
+    
     border-radius: 20px;
-    box-shadow: 2px 2px 4px $light;
+    border-top: 21px solid $accent1; // inner border
+    
     padding: 10px;
 }
 
@@ -550,7 +555,7 @@ footer {
 
 ul.resource-list {
     list-style-type: none;
-    padding-left: 0;
+    /*padding-left: 0;*/
 }
 
 ul.resource-list .resource {
