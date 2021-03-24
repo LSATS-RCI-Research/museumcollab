@@ -521,8 +521,7 @@ footer {
 
 /* @group ----- Resource ----- */
 
-// border and shadow
-div.item.resource,
+// card border and shadow (browse, browse preview only)
 li.item.resource {
     box-shadow: 
         0px 0px 0px 2px $light, // outer border
@@ -530,7 +529,11 @@ li.item.resource {
     
     border-radius: 20px;
     border-top: 21px solid $accent1; // inner border
-    
+}
+
+// space inside cards
+div.item.resource,
+li.item.resource {
     padding: 10px;
 }
 
