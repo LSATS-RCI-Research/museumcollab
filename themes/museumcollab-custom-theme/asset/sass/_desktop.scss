@@ -246,14 +246,14 @@ header .parent .parent .parent ul a {
     line-height: normal;
 }
 
-.item.resource > .media-render,
-.item.resource > a {
+// place image to right of content for browse and browse preview only
+li.item.resource > a {
     float: left;
     margin-right: 10px;
 }
 
 .file .attachments .item.resource {
-    width: 450px;
+    max-width: 450px;
 }
 
 ul.resource-list .resource img {
