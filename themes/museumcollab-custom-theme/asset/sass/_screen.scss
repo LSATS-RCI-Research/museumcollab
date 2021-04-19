@@ -34,9 +34,11 @@ a:hover {
     color: lighten($link, 20%);
 }
 
-// mark external links, select any link that contain //
-// https://css-tricks.com/snippets/jquery/target-only-external-links/#comment-162416
-a[href*="//"]::after {
+// mark external links
+// select any link that contain //
+// ignore links that are part of project 
+// https://davidwalsh.name/external-links-css
+a[href*="//"]:not([href*="museumcollab"])::after {
     content: " \21aa";
 }
 
