@@ -7,7 +7,6 @@ $itemMedia = $item->media();
 ?>
 
 <?php echo $this->pageTitle($item->displayTitle(), 2); ?>
-<h3><?php echo $translate('Item'); ?></h3>
 <?php $this->trigger('view.show.before'); ?>
 
 <?php if ($embedMedia && $itemMedia): ?>

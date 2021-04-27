@@ -432,7 +432,8 @@ nav.pagination {
 
 .site-logo img {
     width: auto;
-    height: 200px;
+    height: auto;
+    max-height: 200px;
 }
 
 header {
