@@ -38,8 +38,12 @@ a:hover {
 // select any link that contain //
 // ignore links that are part of project 
 // https://davidwalsh.name/external-links-css
+// force glyph to render as text on mobile
+// issue on iOS, tested using safari and chrome browser
+// https://stackoverflow.com/questions/32915485/how-to-prevent-unicode-characters-from-rendering-as-emoji-in-html-from-javascrip
+// https://www.unicode.org/reports/tr51/#def_text_presentation_selector
 a[href*="//"]:not([href*="museumcollab"])::after {
-    content: " \21aa";
+    content: " \21aa\fe0e";
 }
 
 h1, h2, h3, h4, h5, h6 {
