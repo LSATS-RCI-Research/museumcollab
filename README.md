@@ -12,7 +12,7 @@ See the Omeka S development environment [setup guide](https://docs.google.com/do
 
 See the Omeka S theme development [setup guide](https://docs.google.com/document/d/1M2cBtl5Ovk-DQi0iKTqtEmSG2KM_ACuoZAvVRPuHFME/edit) for instructions on how to create a new custome theme.
 
-Since this repository already includes a custom theme, the only setup that needs to be done after cloning the repository to the development environment is installing the theme-level css development toolchain and linking the custom theme to the development environment's Omeka S instance. See the theme development setup guide for details, skipping the steps about how to derive a custom theme from an existing one.
+Since this repository already includes a custom theme derived from the official Omeka S [default theme](https://github.com/omeka-s-themes/default/releases/tag/v1.6.0), the only setup that needs to be done after cloning the repository to the development environment is installing the theme-level css development toolchain and linking the custom theme to the development environment's Omeka S instance. See the theme development setup guide for details, skipping the steps about how to derive a custom theme from an existing one.
 
 ### How do I add to the repository?
 
