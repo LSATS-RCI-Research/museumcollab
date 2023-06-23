@@ -1,5 +1,25 @@
 <?php
 $translate = $this->plugin('translate');
+$this->headLink()->appendStylesheet($this->assetUrl('css/resource-page-blocks.css', 'Omeka'));
+$this->htmlElement('body')->appendAttribute('class', 'item resource show');
+$filterLocale = (bool) $this->siteSetting('filter_locale_values');
+$lang = $this->lang();
+$valueLang = $filterLocale ? [$lang, ''] : null;
+?>
+<?php echo $this->pageTitle($item->displayTitle(null, $valueLang), 2); ?>
+<h3><?php echo $translate('Item'); ?></h3>
+<?php $this->trigger('view.show.before'); ?>
+<?php echo $this->resourcePageBlocks($item)->getBlocks(); ?>
+<?php $this->trigger('view.show.after'); ?>
+
+
+
+
+
+<!-- below is the old code from version 3
+
+<?php
+$translate = $this->plugin('translate');
 $escape = $this->plugin('escapeHtml');
 $this->htmlElement('body')->appendAttribute('class', 'item resource show');
 $embedMedia = $this->siteSetting('item_media_embed', false);
@@ -65,3 +85,5 @@ $subjectValues = $item->displaySubjectValues($page, 25, $property);
 <?php endif; ?>
 
 <?php $this->trigger('view.show.after'); ?>
+
+-->
